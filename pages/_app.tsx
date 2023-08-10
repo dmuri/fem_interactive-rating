@@ -10,12 +10,14 @@ const overpass = Overpass({
 
 export default function App({Component, pageProps}: AppProps) {
   return (
-    <Head>
-      <title>Frontend Mentor Challenge</title>
-    </Head>
-
-    <main className={overpass.className}>
-      <Component {...pageProps} />
-    </main>
+      <>
+      <Head>
+        <title>Frontend Mentor Challenge</title>
+      </Head>
+  
+      <main className={overpass.className}>
+        <Component {...pageProps} />
+      </main>
+    </>
   )
 }
